@@ -1,0 +1,95 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f6f6f6;
+  font-family: "Nunito", "Segoe UI", arial;
+  ;
+}
+
+.container {
+  background-color: #fff;
+}
+
+.step-wrapper {
+  padding: 20px 0;
+  display: none;
+}
+.step-wrapper.active {
+  display: block;
+}
+
+.step-indicator {
+  border-collapse: separate;
+  display: table;
+  margin-left: 0px;
+  position: relative;
+  table-layout: fixed;
+  text-align: center;
+  vertical-align: middle;
+  padding-left: 0;
+  padding-top: 20px;
+  /* Adjust the padding for a smaller appearance */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.step-indicator li {
+  display: table-cell;
+  position: relative;
+  float: none;
+  padding: 0;
+  width: 1%;
+}
+.step-indicator li:after {
+  background-color: #ccc;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  width: 100%;
+  top: 22px; /* Adjust the position to match the smaller step size */
+}
+.step-indicator li:after {
+  left: 50%;
+}
+.step-indicator li:last-child:after {
+  display: none;
+}
+.step-indicator li.active .step {
+  border-color: #22577a;
+  color: #22577a;
+}
+.step-indicator li.active .caption {
+  color: #22577a;
+}
+.step-indicator li.complete:after {
+  background-color: #57cc99;
+}
+.step-indicator li.complete .step {
+  border-color: #57cc99;
+  color: #57cc99;
+}
+.step-indicator li.complete .caption {
+  color: #57cc99;
+}
+.step-indicator .step {
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  color: #ccc;
+  font-size: 18px; /* Adjust the font size for a smaller step */
+  height: 48px; /* Adjust the height for a smaller step */
+  line-height: 48px; /* Adjust the line-height to match the height */
+  margin: 0 auto;
+  position: relative;
+  width: 48px; /* Adjust the width for a smaller step */
+  z-index: 1;
+}
+.step-indicator .step:hover {
+  cursor: pointer;
+}
+.step-indicator .caption {
+  color: #ccc;
+  padding: 5px 10px; /* Adjust the padding for a smaller caption */
+  font-size: 14px; /* Adjust the font size for the caption */
+}
