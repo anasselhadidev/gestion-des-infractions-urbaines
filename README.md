@@ -50,9 +50,3 @@ L’objectif principal est de faciliter le travail des **contrôleurs sur le ter
 <img width="887" alt="interface information (1)" src="https://github.com/user-attachments/assets/53660878-7c9a-409d-a8f1-de9508edc3c7" />
 
 
-
-## 📦 Installation
-
-1. Cloner le dépôt :
-   ```bash
-   git clone https://github.com/anasselhadidev/nom-du-repo.git
